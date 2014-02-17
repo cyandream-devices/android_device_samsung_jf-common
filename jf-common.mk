@@ -36,6 +36,12 @@ PRODUCT_COPY_FILES += \
     device/samsung/jf-common/audio/audio_policy.conf:system/etc/audio_policy.conf \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml
 
+# TWRP
+PRODUCT_COPY_FILES += \
+    device/samsung/jf-common/libsec_km.so:recovery/root/sbin/libsec_km.so \
+    device/samsung/jf-common/libsec_ecryptfs.so:recovery/root/sbin/libsec_ecryptfs.so \
+    device/samsung/jf-common/libkeyutils.so:recovery/root/sbin/libkeyutils.so
+
 # Wifi
 PRODUCT_COPY_FILES += \
     device/samsung/jf-common/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
